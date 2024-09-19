@@ -9,8 +9,10 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [1,2],
+    "Dimensions": [3,2],
     "Body": [
-     "","en-US"
+     "","en-US",
+     "_motor1","",
+     "_motor2",""
     ]
    }
