@@ -13,6 +13,9 @@ using System.Linq;
 using System.Globalization;
 using FTOptix.Store;
 using FTOptix.OPCUAServer;
+using FTOptix.Alarm;
+using FTOptix.Modbus;
+using FTOptix.CommunicationDriver;
 
 #endregion
 

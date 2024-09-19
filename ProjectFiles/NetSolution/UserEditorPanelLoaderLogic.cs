@@ -4,6 +4,9 @@ using FTOptix.NetLogic;
 using FTOptix.UI;
 using FTOptix.WebUI;
 using FTOptix.OPCUAServer;
+using FTOptix.Alarm;
+using FTOptix.Modbus;
+using FTOptix.CommunicationDriver;
 #endregion
 
 public class UserEditorPanelLoaderLogic : BaseNetLogic

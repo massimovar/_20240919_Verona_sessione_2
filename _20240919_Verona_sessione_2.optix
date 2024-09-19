@@ -97,16 +97,40 @@ Project:
    Uri: 'urn:FTOptix:OPCUAServer:Net'
    Module: FTOptix.OPCUAServer.Net
    Version: 1.1
+  25:
+   Uri: 'urn:FTOptix:CommunicationDriver'
+   Module: FTOptix.CommunicationDriver
+   Version: 2.1
+  26:
+   Uri: 'urn:FTOptix:CommunicationDriver:Net'
+   Module: FTOptix.CommunicationDriver.Net
+   Version: 2.1
+  27:
+   Uri: 'urn:FTOptix:Alarm'
+   Module: FTOptix.Alarm
+   Version: 4.0
+  28:
+   Uri: 'urn:FTOptix:Alarm:Net'
+   Module: FTOptix.Alarm.Net
+   Version: 1.2
+  29:
+   Uri: 'urn:FTOptix:Modbus'
+   Module: FTOptix.Modbus
+   Version: 1.0
+  30:
+   Uri: 'urn:FTOptix:Modbus:Net'
+   Module: FTOptix.Modbus.Net
+   Version: 1.0
  Statistics:
-  TotalNodeCount: 3137
-  Objects: 629
-  ObjectTypes: 20
-  Variables: 2461
+  TotalNodeCount: 3307
+  Objects: 664
+  ObjectTypes: 21
+  Variables: 2591
   VariableTypes: 0
   DataTypes: 0
-  Methods: 27
-  References: 60
+  Methods: 31
+  References: 126
   ReferenceTypes: 0
-  Files: 27
+  Files: 33
  Nodes:
  - File: Nodes/_20240919_Verona_sessione_2.yaml

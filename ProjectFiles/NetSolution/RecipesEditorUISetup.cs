@@ -16,6 +16,8 @@ using FTOptix.SQLiteStore;
 using FTOptix.Store;
 using FTOptix.CommunicationDriver;
 using FTOptix.OPCUAServer;
+using FTOptix.Alarm;
+using FTOptix.Modbus;
 #endregion
 
 public class RecipesEditorUISetup : BaseNetLogic
