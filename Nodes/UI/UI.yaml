@@ -245,7 +245,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/_20240919_Verona_sessione_2/UI/Screens/DataLogger"
+          Value: "/Objects/_20240919_Verona_sessione_2/UI/Screens/DataLoggerExample"
           Children:
           - Name: Kind
             Type: PropertyType

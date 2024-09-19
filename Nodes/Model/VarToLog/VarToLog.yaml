@@ -1,0 +1,14 @@
+Name: VarToLog
+Type: FolderType
+Children:
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 42
+- Name: Variable2
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Variable3
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "not set"
