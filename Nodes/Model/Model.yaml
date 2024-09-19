@@ -2,3 +2,11 @@ Name: Model
 Type: ModelCategoryFolder
 Children:
 - File: VarToLog/VarToLog.yaml
+- File: VarRicetta/VarRicetta.yaml
+- File: VarPLC/VarPLC.yaml
+- Name: EngineeringUnitDictionary1
+  Type: EngineeringUnitDictionary
+  DataType: EngineeringUnitDictionaryItem
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: [{"TypeId":{"Id":239,"Namespace":1},"Body":{"UnitId":0,"DisplayName":{"LocaleId":"en-US","Text":"galline/mq"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"PhysicalDimension":0,"Slope":1.0,"Intercept":0.0}},{"TypeId":{"Id":239,"Namespace":1},"Body":{"UnitId":1,"DisplayName":{"LocaleId":"en-US","Text":"galline/incq"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"PhysicalDimension":0,"Slope":15.0,"Intercept":5.0}}]

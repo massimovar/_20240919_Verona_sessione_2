@@ -1,0 +1,12 @@
+Name: VarPLC
+Id: g=4b3daf8ad810275afed9d85d67209f0f
+Type: FolderType
+Children:
+- Name: Temperatura
+  Id: g=a84edd88a82403809d91ce666c3dce9f
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: Velocita
+  Id: g=4868ff963beace1d59a9b5c22c3be5a5
+  Type: BaseDataVariableType
+  DataType: Float

@@ -179,6 +179,7 @@ Children:
   - Name: EnableVirtualKeyboard
     Type: BaseDataVariableType
     DataType: Boolean
+    Value: true
   - Name: StartWindow
     Type: NodePointer
     DataType: NodeId
@@ -251,21 +252,6 @@ Children:
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-      - Name: Panel2
-        Type: NavigationPanelItem
-        Children:
-        - Name: Title
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-        - Name: Panel
-          Type: NodePointer
-          DataType: NodeId
-          Value: "/Objects/_20240919_Verona_sessione_2/UI/Screens/Trend"
-          Children:
-          - Name: Kind
-            Type: PropertyType
-            DataType: NodeId
-            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
       - Name: Panel3
         Type: NavigationPanelItem
         Children:
@@ -276,6 +262,36 @@ Children:
           Type: NodePointer
           DataType: NodeId
           Value: "/Objects/_20240919_Verona_sessione_2/UI/Screens/Ricette"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+      - Name: Panel2
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/_20240919_Verona_sessione_2/UI/Screens/GestioneUtenti"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+      - Name: Panel4
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/_20240919_Verona_sessione_2/UI/Screens/GestioneLingueLocale"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -319,4 +335,74 @@ Children:
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 3
+  - Name: IdleTimeoutLogic
+    Type: NetLogic
+    WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+    Children:
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: Duration
+      Type: BaseDataVariableType
+      DataType: Duration
+      Value: "0:00:00:10.0000000"
+    - Name: OnTimeout
+      Type: MethodInvocation
+      Children:
+      - Class: Reference
+        Target: ns=2;i=98
+        Direction: Forward
+      - Name: ObjectPointer
+        Type: NodePointer
+        DataType: NodeId
+        Value: "/Objects/Commands/CoreCommands"
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType"
+      - Name: Method
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ChangeUser"
+      - Name: InputArguments
+        Type: BaseObjectType
+        Children:
+        - Name: Username
+          Type: BaseDataVariableType
+          DataType: String
+          Description: {"NamespaceIndex":2,"TextId":"ChangeUserUsernameDescription"}
+          Value: "Anonymous"
+        - Name: Password
+          Type: BaseDataVariableType
+          DataType: String
+          Description: {"NamespaceIndex":2,"TextId":"ChangeUserPasswordDescription"}
+      - Name: OutputArguments
+        Type: BaseObjectType
+        Children:
+        - Name: Result
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Description: {"NamespaceIndex":2,"TextId":"ChangeUserResultDescription"}
+    - Name: ns=4;LibraryReference
+      Type: ObjectLibraryReference
+      DataType: ObjectLibraryReferenceDataType
+      ModellingRule: None
+      Value: 
+       {
+        "TypeId": {
+         "Id": 72,
+         "Namespace": 4
+        },
+        "Body": {
+         "libraryGuid": "f0701375ee41467993d632db6a8fdaa5",
+         "objectGuid": "9819596a6fb88d10259fc8280ab8bb9b",
+         "objectVersion": 1,
+         "highestIgnoredVersion": 0
+        }
+       }
 - File: Screens/Screens.yaml
+- File: LoginForm/LoginForm.yaml
+- File: UserEditor/UserEditor.yaml
+- File: Widget/Widget.yaml

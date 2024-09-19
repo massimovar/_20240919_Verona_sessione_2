@@ -1,0 +1,100 @@
+Name: Widget
+Type: FolderType
+Children:
+- Name: DisplayUnitaMisura
+  Id: g=5f991a836055f0e26ceb0ecebbf526d4
+  Supertype: RowLayout
+  ReferenceType: HasComponent
+  Children:
+  - Name: SpinBox1
+    Type: SpinBox
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Double
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../VariabilePLC"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+        - Name: EUMode
+          Type: BaseVariableType
+          DataType: DynamicLinkEUMode
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: ShowButtons
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+    - Name: Format
+      Type: BaseDataVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "f2"
+  - Name: Label1
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../VariabilePLC/EngineeringUnits/DisplayName"
+        Children:
+        - Name: EUMode
+          Type: BaseVariableType
+          DataType: DynamicLinkEUMode
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+  - Name: VariabilePLC
+    Type: AnalogItemType
+    DataType: Float
+    Children:
+    - Name: EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+    - Name: EngineeringUnits
+      Type: EUInformationType
+      DataType: EUInformation
+      Children:
+      - Name: UnitId
+        Type: BaseVariableType
+        DataType: Int32
+        ReferenceType: HasProperty
+        Value: -1
+      - Name: DisplayName
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+      - Name: Description
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty

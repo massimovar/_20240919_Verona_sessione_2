@@ -81,16 +81,32 @@ Project:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
    Version: 3.0
+  21:
+   Uri: 'urn:FTOptix:Recipe'
+   Module: FTOptix.Recipe
+   Version: 1.0
+  22:
+   Uri: 'urn:FTOptix:Recipe:Net'
+   Module: FTOptix.Recipe.Net
+   Version: 1.0
+  23:
+   Uri: 'urn:FTOptix:OPCUAServer'
+   Module: FTOptix.OPCUAServer
+   Version: 1.1
+  24:
+   Uri: 'urn:FTOptix:OPCUAServer:Net'
+   Module: FTOptix.OPCUAServer.Net
+   Version: 1.1
  Statistics:
-  TotalNodeCount: 611
-  Objects: 161
-  ObjectTypes: 4
-  Variables: 445
+  TotalNodeCount: 3099
+  Objects: 623
+  ObjectTypes: 19
+  Variables: 2430
   VariableTypes: 0
   DataTypes: 0
-  Methods: 1
-  References: 24
+  Methods: 27
+  References: 59
   ReferenceTypes: 0
-  Files: 21
+  Files: 27
  Nodes:
  - File: Nodes/_20240919_Verona_sessione_2.yaml
