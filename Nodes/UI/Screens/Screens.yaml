@@ -1,15 +1,15 @@
 Name: Screens
 Type: ScreensCategoryFolder
 Children:
-- Name: Screen1
+- Name: DataLogger
   Id: g=2a200b7a56acb470922cbb6a504f900a
   Supertype: Screen
   ReferenceType: HasComponent
-- Name: Screen2
+- Name: ns=7;Trend
   Id: g=04b6527d21efaf2b274d80ed36bbd564
   Supertype: Screen
   ReferenceType: HasComponent
-- Name: Screen3
+- Name: Ricette
   Id: g=58754b54ed79b31f4595f829a087ad9e
   Supertype: Screen
   ReferenceType: HasComponent

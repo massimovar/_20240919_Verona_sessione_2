@@ -245,7 +245,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/_20240919_Verona_sessione_2/UI/Screens/Screen1"
+          Value: "/Objects/_20240919_Verona_sessione_2/UI/Screens/DataLogger"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -260,7 +260,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/_20240919_Verona_sessione_2/UI/Screens/Screen2"
+          Value: "/Objects/_20240919_Verona_sessione_2/UI/Screens/Trend"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -275,7 +275,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/_20240919_Verona_sessione_2/UI/Screens/Screen3"
+          Value: "/Objects/_20240919_Verona_sessione_2/UI/Screens/Ricette"
           Children:
           - Name: Kind
             Type: PropertyType
