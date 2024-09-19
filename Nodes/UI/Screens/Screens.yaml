@@ -5485,3 +5485,7 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 20.0
+- Name: Scripting
+  Id: g=b0810987baf8f2099732077f24522ba1
+  Supertype: Screen
+  ReferenceType: HasComponent
