@@ -2,6 +2,5 @@ Name: Tags
 Type: FolderType
 Children:
 - Name: ModbusTag1
-  Id: g=e5bc602c99729e5c6f0b2ebc7085ff31
   Type: ModbusTag
   DataType: Boolean
